@@ -1,4 +1,5 @@
-# Upload Image in MongoDB
+# CSV-IN-MSSQL
+
 
 
 📦Install
@@ -11,7 +12,7 @@ npm install
 💻Usage
  
 ```js
-// replace the value in your .env 
+// replace the config in your index.js 
 const config = {
     user: 'xxxx',
     password: 'xxxx',

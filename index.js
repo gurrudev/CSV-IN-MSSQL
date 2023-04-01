@@ -10,10 +10,10 @@ const bodyParser = require('body-parser')
 
 
 const config = {
-    user: 'xxxx',
-    password: 'xxxx',
-    server: 'xxxx', // e.g. 'localhost'
-    database: 'xxxx',
+    user: 'gainn',
+    password: 'ashutosh@123',
+    server: 'GAINN-PC22', // e.g. 'localhost'
+    database: 'HOLIDAY_MASTER_CSV',
     options: {
         encrypt: true, // For secure connection
         trustServerCertificate: true,
@@ -46,8 +46,6 @@ app.post('/upload', upload.single('fileToUpload'), function (req, res, next) {
                 let query = '';
                 for (let i = 0; i < results.length; i++) {
                     const row = results[i];
-                    
-                    // replace Date, Day, Holiday with column name present in your csv file
                     query += `INSERT INTO HOLIDAY (DATE, DAY, HOLIDAY) VALUES ('${row.Date}', '${row.Day}', '${row.Holiday}')\n`;
                 }
                 request.query(query, function (err, result) {
