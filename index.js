@@ -10,10 +10,10 @@ const bodyParser = require('body-parser')
 
 
 const config = {
-    user: 'gainn',
-    password: 'ashutosh@123',
-    server: 'GAINN-PC22', // e.g. 'localhost'
-    database: 'HOLIDAY_MASTER_CSV',
+    user: 'xxxx',
+    password: 'xxxx',
+    server: 'xxxx', // e.g. 'localhost'
+    database: 'xxxx',
     options: {
         encrypt: true, // For secure connection
         trustServerCertificate: true,
