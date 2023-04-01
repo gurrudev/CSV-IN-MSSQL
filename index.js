@@ -46,6 +46,8 @@ app.post('/upload', upload.single('fileToUpload'), function (req, res, next) {
                 let query = '';
                 for (let i = 0; i < results.length; i++) {
                     const row = results[i];
+                    
+                    // replace Date, Day, Holiday with column name present in your csv file
                     query += `INSERT INTO HOLIDAY (DATE, DAY, HOLIDAY) VALUES ('${row.Date}', '${row.Day}', '${row.Holiday}')\n`;
                 }
                 request.query(query, function (err, result) {
