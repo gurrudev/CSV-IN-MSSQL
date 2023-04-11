@@ -29,5 +29,5 @@ const config = {
 🚀Start
 
 ```sh
-npm start
+$ npm start
 ```
